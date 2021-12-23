@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- FONTS HIND -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FONTS AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="w-100">
+        <nav class="container navbar navbar-expand-lg navbar-dark py-3">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-dice-d20"></i>
+                <span>CyberPortfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPort"
+                aria-controls="navbarPort" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarPort">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="portCarousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="4000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="./img/1.jpg" class="animate__animated animate__fadeInUp" alt="">
+                        <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.</h5>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to
+                            grow.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="./img/2.jpg" class="animate__animated animate__fadeInUp" alt="">
+                        <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.</h5>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to
+                            grow.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="4000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <img src="./img/3.jpg" class="animate__animated animate__fadeInUp" alt="">
+                        <h5 class="animate__animated animate__fadeInUp animate__delay-1s">Our goals. Our mission.</h5>
+                        <p class="animate__animated animate__fadeInUp animate__delay-2s">How we help other companies to
+                            grow.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects py-5">
+        <div class="container title text-center">
+            <h2>I Love What I Do</h2>
+            <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis
+                dapibus nunc, ut
+                rhoncus turpis sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum primis in faucibus orci
+                luctus et
+                ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
+        </div>
+        <div class="container projects__content">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link px-3 active" id="all__projects" data-toggle="pill" href="#pills-allProjects"
+                        role="tab" aria-controls="pills-allProjects" aria-selected="true">All
+                        Projects</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link px-3" id="illustration" data-toggle="pill" href="#pills-illustration" role="tab"
+                        aria-controls="pills-illustration" aria-selected="false">Illustration</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link px-3" id="photography" data-toggle="pill" href="#pills-photography" role="tab"
+                        aria-controls="pills-photography" aria-selected="false">Photography</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link px-3" id="website" data-toggle="pill" href="#pills-website" role="tab"
+                        aria-controls="pills-website" aria-selected="false">Website</a>
+                </li>
+            </ul>
+            <div class="tab-content text-center" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-allProjects" role="tabpanel"
+                    aria-labelledby="all__projects">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i1.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Apologetic robot holding flowers</h5>
+                                    <p class="card-text">Branding</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i2.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Woman walking her small dog</h5>
+                                    <p class="card-text">Illustrations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i3.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Oil bottle branding title</h5>
+                                    <p class="card-text">Branding</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i4.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Smiling Woman</h5>
+                                    <p class="card-text">Illustrations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i5.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Drink can design</h5>
+                                    <p class="card-text">Packaging</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-5">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i6.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">I love you hand gesture</h5>
+                                    <p class="card-text">Illustrations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-illustration" role="tabpanel" aria-labelledby="illustration">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i1.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i2.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i3.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-photography" role="tabpanel" aria-labelledby="photography">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i1.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i2.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-website" role="tabpanel" aria-labelledby="website">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card animate__animated animate__zoomIn" style="width: 18rem;">
+                                <img src="./img/i1.jpg" class="card-img-top" alt="img">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="title text-center text-white">
+                <h2>I Love What I Do</h2>
+                <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis
+                    dapibus nunc, ut
+                    rhoncus turpis sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum primis in faucibus
+                    orci
+                    luctus et
+                    ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
+            </div>
+            <div class="services__content text-center text-white mt-5 pt-3">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <div class="services__item">
+                            <i class="fa fa-paint-brush"></i>
+                            <h4>Design</h4>
+                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Nulla mollis dapibus nunc </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <div class="services__item">
+                            <i class="fa fa-shekel-sign"></i>
+                            <h4>Marketing</h4>
+                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Nulla mollis dapibus nunc </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mb-5 mb-md-0">
+                        <div class="services__item">
+                            <i class="fa fa-camera"></i>
+                            <h4>Photography</h4>
+                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                                Nulla mollis dapibus nunc </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="award">
+        <div class="award__bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="award__left heading">
+                        <h2>Our Achievement and Award</h2>
+                        <p class="my-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                            ullamcorper mattis, pulvinar dapibus
+                            leo.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="award__right">
+                        <p>Luctus porta semper aptent morbi. Vestibulum lectus tempus augue dictumst enim commodo
+                            facilisis. Mus laoreet
+                            scelerisque habitant urna dui sem diam. Purus dis nam eget. Scelerisque placerat lectus
+                            lorem etiam. Elementum integer
+                            phasellus lectus.</p>
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid" src="./img/ic1.png" alt="img">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="./img/ic2.png" alt="img">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="./img/ic3.png" alt="img">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="./img/ic4.png" alt="img">
+                            </div>
+                            <div class="col">
+                                <img class="img-fluid" src="./img/ic5.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-5">
+        <div class="container text-center text-white">
+            <div class="footer__main">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="footer__copies">
+                <p>© 2021 CyberPortfolio. All rights reserved | Designed by <a href="#">CyberSoft</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
